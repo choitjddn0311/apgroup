@@ -10,7 +10,6 @@ a {
 }
 .wrap {
     height: 625px;
-    background-color: #aaa;
 }
 header {
     width: 1712.690px;
@@ -102,7 +101,7 @@ header:hover {
     color: #fff;
     font-size: 20px;
     width: 210px;
-    line-height: 70px;
+    line-height: 65px;
     text-align: center;
 }
 .menu > ul > li:hover {
