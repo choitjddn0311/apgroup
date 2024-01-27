@@ -5,16 +5,22 @@
 li {
     list-style: none;
 }
+ul {
+    padding: 0;
+    margin: 0;
+}
 a {
     text-decoration: none;
 }
 .wrap {
-    height: 625px;
+    position: relative;
 }
 header {
-    width: 1712.690px;
+    width: 1712px;
     height: 140px;
-    padding: 0 95.141px 0 95.141px;
+    padding: 0 95px 0 95px;
+    position: relative;
+    z-index: 100;
 }
 header:hover {
     background-color: #062c5e;
@@ -49,14 +55,23 @@ header:hover {
     margin-right: 10px;
     font-size: 14px;
 }
+.lang > ul > li:first-child > a{
+    border-bottom: 1px solid #fff;
+}
+.lang > ul > li:nth-child(2) > a {
+    color: #bbb;
+}
+.lang > ul > li:nth-child(2) > a:hover {
+    border-bottom: 1px solid #bbb;
+}
+.lang > ul > li:nth-child(3) > a {
+    color: #bbb;
+}
+.lang > ul > li:nth-child(3) > a:hover {
+    border-bottom: 1px solid #bbb;
+}
 .lang > ul > li > a {
     color: #fff;
-}
-.lang > ul > li:first-child > a{
-    border-bottom: 2px solid #fff;
-}
-.lang > ul > li > a:hover{
-    border-bottom: 2px solid #fff;
 }
 .logo {
     width: 100%;
@@ -76,6 +91,8 @@ header:hover {
 }
 .s {
     display: flex;
+    width: 175px;
+    padding: 0;
 }
 .s > li{
     width: 35px;
@@ -108,4 +125,62 @@ header:hover {
     color: #c5deff;
     border-bottom: 5px solid #c5deff;
     cursor: pointer;
+}
+.main_img {
+    width: 1902px;
+    height: 727px;
+    position: absolute;
+    right: 1px;
+    left: 0.1px;
+    top: 0.00001px;
+}
+.main_img > img{
+    width: 1902px;
+    height: 727px;
+}
+.slide_select {
+    width: 1902px;
+    height: 83px;
+    position: absolute;
+    top: 727.4px;
+}
+.loding_bar {
+    width: 1902px;
+    height: 7px;
+    background-color: #005295;
+}
+.slide_menu {
+    width: 1903px;
+    height: 76px;
+    background-color: #f5f5f5;
+}
+.slide_wrap {
+    width: 1409px;
+    height: 76px;
+    padding: 0 95px 0 95px;
+    margin: 0 151px 0 151px;
+}
+.slide_menu_wrap {
+    width: 1409px;
+    height: 76px;
+}
+.slide_menu_wrap > ul {
+    width: 1409px;
+    display: flex;
+    justify-content: center;
+}
+.slide_menu_wrap > ul > li {
+    width: 338px;
+    height: 73px;
+}
+.slide_menu_wrap > ul > li:hover {
+    border-bottom: 3px solid #333;
+}
+.slide_menu_wrap > ul > li > button {
+    width: 338px;
+    height: 73px;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    font-weight: 400;
 }
