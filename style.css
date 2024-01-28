@@ -245,3 +245,66 @@ header:hover {
     font-size: 20px;
     font-weight: 400;
 }
+.news {
+    width: 1902px;
+    height: 462px;
+    padding: 100px 0 80px 0;
+    margin-top: 810px;
+}
+.news_wrap {
+    width: 1409px;
+    height: 462px;
+    padding: 0 95px 0 95px;
+    margin: 0 151.5px 0 151.5px;
+    position: relative;
+}
+.news_wrap > button {
+    width: 123px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 1340px;
+}
+.news_wrap > button:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+.news_h {
+    display: block;
+    font-size: 30px;
+    width: 1409px;
+    margin-bottom: 30px;
+}
+.news_list {
+    display: flex;
+    width: 1409px;
+    justify-content: space-around;
+}
+.news_list > li {
+    width: 274px;
+    height: 353px;
+    padding: 20px 10px 20px 10px;
+    overflow: hidden;
+}
+.news_list > li:hover > p{
+    color: #062c5e;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.news_list > li:hover > img {
+    transform: scale(1.01);
+}
+.news_list > li > p {
+    display: block;
+    width: 274px;
+}
+.news_list > li > img {
+    width: 274px;
+    height: 274px;
+    transition: all 0.6s linear;
+}
