@@ -21,6 +21,7 @@ header {
     padding: 0 95px 0 95px;
     position: relative;
     z-index: 100;
+    transition: all 0.9s;
 }
 header:hover {
     background-color: #062c5e;
@@ -155,7 +156,7 @@ header:hover {
 .h_sub_title > h2 {
     color: #fff;
     display: block;
-    font-size: 50px;
+    font-size: 70px;
     width: 558px;
     text-align: center;
 }
@@ -168,6 +169,7 @@ header:hover {
     display: block;
     font-size: 18px;
     width: 558px;
+
     text-align: center;
 }
 .h_about > button {
@@ -180,6 +182,7 @@ header:hover {
     position: absolute;
     left: 220px;
     top: 250px;
+    transition: all 0.9s;
 }
 .h_about > button:hover {
     background-color: #fff;
@@ -266,7 +269,7 @@ header:hover {
     border-radius: 20px;
     position: absolute;
     top: 0px;
-    left: 1340px;
+    left: 1250px;
 }
 .news_wrap > button:hover {
     background-color: #333;
@@ -279,25 +282,26 @@ header:hover {
     font-size: 30px;
     width: 1409px;
     margin-bottom: 30px;
+    margin-left: 150px;
 }
 .news_list {
     display: flex;
     width: 1409px;
-    justify-content: space-around;
+    justify-content: center;
 }
 .news_list > li {
     width: 274px;
     height: 353px;
-    padding: 20px 10px 20px 10px;
+    margin: 20px 10px 20px 10px;
     overflow: hidden;
 }
 .news_list > li:hover > p{
-    color: #062c5e;
+    color: #006eff;
     text-decoration: underline;
     cursor: pointer;
 }
 .news_list > li:hover > img {
-    transform: scale(1.01);
+    transform: scale(1.2);
 }
 .news_list > li > p {
     display: block;
@@ -307,4 +311,192 @@ header:hover {
     width: 274px;
     height: 274px;
     transition: all 0.6s linear;
+}
+.bg {
+    filter: brightness(30%);
+    width: 1902px;
+    height: 455px;
+}
+.bg > img {
+    width: 1902px;
+    height: 455px;
+}
+.story {
+    width: 1409px;
+    height: 832px;
+    padding: 0 95px 0 95px;
+    margin: 0 151px 0 151px;
+    position: absolute;
+    top: 1592px;
+}
+.story > h1 {
+    text-align: center;
+    display: block;
+    width: 1409px;
+    padding: 155px 0 68px 0;
+    font-size: 40px;
+    color: #fff;
+}
+.story > ul{
+    width: 1409px;
+    display: flex;
+    justify-content: center;
+}
+.story > ul > li {
+    width: 284px;
+    height: 284px;
+    margin: 20px 10px 20px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.story > ul > li:hover > img{
+    transform: scale(1.1);
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.story > ul > li:hover > button {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+.story > ul > li > img {
+    width: 284px;
+    height: 284px;
+    transition: all 0.8s;
+}
+.story > ul > li > p {
+    font-size: 18px;
+    color: #fff;
+    bottom: 40px;
+    left: 30px;
+    display: block;
+    width: 160px;
+    position: absolute;
+    font-weight: bold;
+}
+.story > ul > li > button { 
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    position: absolute;
+    color: #fff;
+    bottom: 30px;
+    left: 220px;
+    z-index: 200;
+}
+.story_about {
+    width: 751px;
+    height: 177px;
+    margin: 50px 211px 75px 211px;
+    margin: 0 auto;
+    padding: 60px;
+}
+.story_title {
+    display: block;
+    width: 751px;
+    text-align: center;
+}
+.story_about > p {
+    display: block;
+    width: 780px;
+    height: 115px;
+    margin: 18px 0 18px 0;
+    text-align: center;
+    color: #777;
+}
+.story_button {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.story_button > div {
+    width: 5px;
+    height: 5px;
+    background-color: #444;
+    border: 1px solid #444;
+    border-radius: 2.5px;
+    line-height: 50px;
+}
+.story_button > div:hover {
+    background-color: #000;
+}
+.story_button > div:nth-child(5) {
+    background-color: #FFF;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+.product {
+    width: 1902px;
+    height: 692px;
+    background-color: #eee;
+}
+.product_title {
+    width: 1409px;
+    height: 159px;
+    padding: 0 95px 0 95px;
+    margin: 600px 151px 0 151px;
+}
+.product_title > h1 {
+    display: block;
+    line-height: 159px;
+    width: 1409px;
+    text-align: center;
+}
+.product_list {
+    display: flex;
+    width: 1902px;
+    height: 483px;
+    justify-content: center;
+}
+.product_list > li {
+    width: 383px;
+    height: 460px;
+    padding: 11px;
+}
+.product_list > li:nth-child(1) > a > img{
+    width: 96px;
+    height: 19px;
+    padding-top: 30px;
+    padding-left: 150px;
+}
+.product_list > li:nth-child(2) > a > img{
+    width: 206px;
+    height: 21px;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+.product_list > li:nth-child(3) > a > img{
+    width: 144px;
+    height: 28px;
+    padding-top: 30px;
+    padding-left: 125px;
+}
+.product_list > li > img {
+    width: 383px;
+    height: 383px;
+}
+.product_button {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.product_button > div:first-child {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+.product_button > div {
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 2.5px;
+    border: 1px solid #333;
 }
